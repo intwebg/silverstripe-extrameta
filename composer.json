@@ -17,6 +17,6 @@
   "require": {
     "silverstripe/cms": "~3.1",
     "silverstripe/framework": "~3.1",
-		"silverstripe-australia/gridfieldextensions": "~1.2",
+    "silverstripe-australia/gridfieldextensions": "~1.2",
   }
 }
