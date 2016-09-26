@@ -10,13 +10,13 @@ How it works:
 - The $SiteConfig.Image will be taken if $image isnt added inside pages.
 
 Social media image usage:
-- You must include SocialMediaLinks to display social media link into a templates
+- Include SocialMediaPack inside the head of your site to override random shared images
+- You must include SocialMediaLinks to display social media link into a templates (Ex.: footer)
 - And include SocialMediaShares to display social media sharing capabilities
 
 Good for:
 - News shared image
 - Blog shared image
-- Show social links in footer or header
 
 Informations for your page templates:
 - If you use a different image field name (ex.: NewsImage), you can duplicate it like:
