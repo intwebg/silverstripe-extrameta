@@ -1,4 +1,4 @@
-# socialmediapack
+# SocialMediaPack
 Bring social media links and shared to SilverStripe
 
 What it do:
