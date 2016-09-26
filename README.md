@@ -8,6 +8,7 @@ What it do:
 How it works:
 - The page containing $Image in MetaData is taken instead of $SiteConfig.Image when configured.
 - The $SiteConfig.Image will be taken if $image isnt added inside pages.
+- Give capability to sort icons as desired positions
 
 Social media image usage:
 - Include SocialMediaPack inside the head of your site to override random shared images
