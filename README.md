@@ -8,15 +8,16 @@ What it do:
 How it works:
 - The page containing $Image in MetaData is taken instead of $SiteConfig.Image when configured.
 - The $SiteConfig.Image will be taken if $image isnt added inside pages.
-- Give capability to sort icons as desired positions
 
-Social media image usage:
+Social media usage:
 - Include SocialMediaPack inside the head of your site to override random shared images
-- You must include SocialMediaLinks to display social media link into a templates (Ex.: footer)
 - And include SocialMediaShares to display social media sharing capabilities
+- Give theme styles if you don't want to create it
+- Include SocialMediaLinks to display social media link into a templates (not ready at this time)
 
 Good for:
 - News shared image
+- Portfolio shared image
 - Blog shared image
 
 Informations for your page templates:
@@ -30,4 +31,3 @@ Informations for your page templates:
 
 TODO:
 - Translation to other language
-- Make some interesting style sheets

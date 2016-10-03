@@ -2,4 +2,6 @@ fr:
   SocialMediaPack:
     DEFAULTSHAREDIMAGE: 'Image partagée par défaut'
     SHAREDIMAGE: 'Image à partager'
-    
+    SOCIALMEDIA : 'MédiaSociaux'
+    SHARE : 'Partage'
+    FOLLOW : 'Suivre'

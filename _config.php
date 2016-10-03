@@ -6,3 +6,4 @@ Requirements::css("socialmediapack/templates/css/styles.css");
 Object::add_extension('SiteTree', 'SocialMediaPack');
 Object::add_extension('SiteConfig', 'SocialMediaPackSiteConfig');
 
+
