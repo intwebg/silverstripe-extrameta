@@ -1,4 +1,6 @@
 <% require javascript(socialmediapack/templates/javascript/script.js) %>
+<% require css(socialmediapack/thirdparty/Font-Awesome/css/font-awesome.min.css) %>
+<% require css(socialmediapack/templates/css/styles.css) %>
 
 
 <div class="socialmediashares">

@@ -8,12 +8,11 @@ What it do:
 How it works:
 - The page containing $Image in MetaData is taken instead of $SiteConfig.Image when configured.
 - The $SiteConfig.Image will be taken if $image isnt added inside pages.
+- Add automatically in head of your pages additionnals MetaData to override random shares images
 
 Social media usage:
-- Include SocialMediaPack inside the head of your site to override random shared images
-- And include SocialMediaShares to display social media sharing capabilities
-- Give theme styles if you don't want to create it
-- Include SocialMediaLinks to display social media link into a templates (not ready at this time)
+- And include SocialMediaShares into page templates to display social media sharing capabilities
+- Select one of the theme styles or choose your own design
 
 Good for:
 - News shared image
@@ -31,3 +30,4 @@ Informations for your page templates:
 
 TODO:
 - Translation to other language
+- Include SocialMediaLinks to display social media link into a templates (not ready at this time)

@@ -81,7 +81,7 @@ class SocialMediaPackSiteConfig extends DataExtension {
 		
 		
 		
-		/*
+		
 		$fields->addFieldToTab(
             'Root.SocialMedia.Share',    
             $uploadField = new UploadField(
@@ -90,7 +90,7 @@ class SocialMediaPackSiteConfig extends DataExtension {
             )    
         );
 		$uploadField->setFolderName('Uploads/SocialMedia');
-		*/
+		
 	/*
 	
 		$fields->addFieldToTab(
