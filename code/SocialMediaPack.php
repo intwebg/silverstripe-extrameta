@@ -20,36 +20,30 @@ class SocialMediaPack extends DataExtension {
 		
 	}
 
-	
-
 }
 
 class SocialMediaPackExtension extends DataExtension {
 
-public function contentcontrollerInit() {
-	
-	
-	if (!$this->MetaTitle) {
-		$Title=$this->owner->Title;
-	}
-	$Description=$this->owner->MetaDescription;
-	
-	$SiteName = SiteConfig::get()->first()->Title;
-	$AbsoluteLink = $this->owner->AbsoluteLink();
-	
-	var_dump( ($this->owner->Image()->Title));
-	
-	
-	
-	
-	if (!is_null($this->owner->Image()->Title)) {
-		$Image=$this->owner->Image()->AbsoluteLink();
-	} else {
-		$Image=SiteConfig::get()->first()->Image()->AbsoluteLink();
-	}
-	
+	public function contentcontrollerInit() {
 		
-	Requirements::insertHeadTags(<<<EOF
+		
+		if (!$this->MetaTitle) {
+			$Title=$this->owner->Title;
+		}
+		
+		$Description=$this->owner->MetaDescription;
+		
+		$SiteName = SiteConfig::get()->first()->Title;
+		$AbsoluteLink = $this->owner->AbsoluteLink();
+		
+		if (!is_null($this->owner->Image()->Title)) {
+			$Image=$this->owner->Image()->AbsoluteLink();
+		} else {
+			$Image=SiteConfig::get()->first()->Image()->AbsoluteLink();
+		}
+	
+
+Requirements::insertHeadTags(<<<EOF
 <meta property="og:title" content="$Title – $SiteName" />
 <meta itemprop="name" content="$Title – $SiteName">
 <meta property="og:site_name" content="$SiteName" />
@@ -64,6 +58,6 @@ public function contentcontrollerInit() {
 EOF
 );
 
-		}
+	}
 		
 }
