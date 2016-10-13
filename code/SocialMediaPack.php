@@ -8,12 +8,12 @@ class SocialMediaPack extends DataExtension {
 	function updateCMSFields(FieldList $fields) { 
 	
 		$fields->addFieldToTab(
-            'Root.Main.Metadata',    
-            $uploadField = new UploadField(
-                $name = 'Image',
-                $title = _t('SocialMediaPack.SHAREDIMAGE','Shared image')
-            )    
-        );
+			'Root.Main.Metadata',    
+			$uploadField = new UploadField(
+			$name = 'Image',
+			$title = _t('SocialMediaPack.SHAREDIMAGE','Shared image')
+			)    
+		);
 		$uploadField->setFolderName('Uploads/SocialMedia');
 
 		return $fields; 
@@ -30,9 +30,9 @@ class SocialMediaPackExtension extends DataExtension {
 		if (!$this->MetaTitle) {
 			$Title=$this->owner->Title;
 		}
-		
-		$Description=$this->owner->MetaDescription;
-		
+		if (!is_null($this->owner->MetaDescription)) {
+			$Description=$this->owner->MetaDescription;
+		}
 		$SiteName = SiteConfig::get()->first()->Title;
 		$AbsoluteLink = $this->owner->AbsoluteLink();
 		
